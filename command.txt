@@ -1,0 +1,3 @@
+pyuic5 -o main_ui.py main.ui
+
+nuitka --windows-disable-console --standalone --show-memory --show-progress --nofollow-imports --plugin-enable=qt-plugins --follow-import-to=utils,src --output-dir=out --windows-icon-from-ico=./favicon.ico main_start.py
